@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Candidatura a Voluntarios</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Candidatura para Voluntários</h1>
+    <form action="SheetAccepted.html" method="post">
+
+        <label for="nome">Nome:</label>
+        <input required type="text" name="name" id="nome">
+        <br><br>
+
+        <label for="contacto">Contacto:</label>
+        <input required type="text" name="contacto" id="contacto" >
+        <br><br>
+
+        <label for="horarios">Disponibilidade:</label>
+        <input required type="text" list="horarios" name="horario" id="horario">
+        <datalist id="horarios">
+            <option value="21 Agosto - 19:00 - 23:30">
+            <option value="22 Agosto - 19:00 - 23:30">
+            <option value="23 Agosto - 19:00 - 23:30">
+            <option value="24 Agosto - 19:00 - 23:30">
+        </datalist>
+        <br><br>
+
+        <input type="submit" value="Enviar Candidatura">
+    </form>
+</body>
+</html>
