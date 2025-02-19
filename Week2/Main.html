@@ -1,65 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Festival Vilar de Mouros</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
 
     <header>
         <h1>Festival Vilar de Mouros</h1>
-        <figure><img src="images/l_cavilardemouros24.png" width="60%" alt="header image"></figure>
+        <figure><img src="images/l_cavilardemouros24.png" width="40%" alt="header image"></figure>
     </header>
 
     <nav class="menu">
         <ul>
             <li><a class="button" href="main.html">Home</a></li>
             <li><a class="button" href="Sheet.html">Candidatura para Voluntários</a></li>
-            <li><a class="button" href="https://www.vodafoneparedesdecoura.com">Paredes de Coura</a></li>
-            <li><a class="button" href="https://nosalive.com">NOS Alive</a></li>
-            <li><a class="button" href="https://www.superbocksuperrock.pt">Super Bock Super Rock</a></li>
         </ul>
     </nav>
 
-    <!-- noticias / informacoes usando aside (para complementar) -->
-    <aside>
-        <h2>Últimas notícias</h2>
-        <p>Existirão várias opções gastronómicas, com espaços onde os festivaleiros poderão consumir as suas refeições.</p>
-        <p>Novos artistas confirmados!</p>
-        <p>Edição 2025 será a maior de sempre</p>
-        <p>Os passes gerais têm que ser obrigatoriamente trocados por uma pulseira na bilheteira do festival.</p>
-    </aside>
-
-    <br>
-
     <main>
-        <article>
-            <figure><a class="button" href="https://www.festivalvilardemouros.pt"><img src="images/vilar.png" width="25%" alt="Image not found: Cartaz" title="Cartaz"> </a>
+
+    <section class="row">
+        <article class="column side" style="background-color:#aaa;">
+            <!-- noticias / informacoes usando aside (para complementar) -->
+            <aside>
+                <h2>Últimas notícias</h2>
+                <p>Existirão várias opções gastronómicas, com espaços onde os festivaleiros poderão consumir as suas refeições.</p>
+                <p>Novos artistas confirmados!</p>
+                <p>Edição 2025 será a maior de sempre</p>
+                <p>Os passes gerais têm que ser obrigatoriamente trocados por uma pulseira na bilheteira do festival.</p>
+            </aside>
+        </article>
+        <article class="column middle" style="background-color:#bbb;">
+            <h2>Cartaz</h2>
+            <figure><a href="https://www.festivalvilardemouros.pt"><img src="images/vilar.png" id="festivalHeader" width="40%" alt="Image not found: Cartaz" title="Cartaz"> </a>
                 <figcaption>Cartaz 2025</figcaption>
             </figure>
-        </article>
+            <br>
 
-        <br>
-
-        <article>
-            <h3> O nosso Festival</h3>
-            <section>
-                <h4>História</h4>
-                <p>O Festival de Vilar de Mouros realizou-se pela primeira vez em 1965, com características idênticas a outros eventos minhotos de folclore,
-                    <br>tendo ganho alguma projecção nacional na quarta edição, em 1968, com o alargamento do âmbito à música erudita e ao fado.</p>
-            </section>
-            <section>
-                <h4>Localização</h4>
-                <p>O nosso festival localiza-se na freguesia de Vilar de Mouros no Concelho de Caminha.
-                </p>
-            </section>
-        </article>
-
-        <article>
-            <!-- tabela com os horários -->
-            <table class="table">
+            <h2>Horário</h2>
+            <article>
+                <!-- tabela com os horários -->
+                <table class="table">
                 <tr>
                     <th>Artista</th>
                     <th>Data</th>
@@ -166,8 +151,33 @@
                     <th>23:00</th>
                 </tr>
             </table>
+            </article>
+            <br> <br>
         </article>
+        <article class="column side" style="background-color:#ccc;">
+            <h2> O nosso Festival</h2>
+            <section>
+                <h4>História</h4>
+                <p>O Festival de Vilar de Mouros realizou-se pela primeira vez em 1965, com características idênticas a outros eventos minhotos de folclore,
+                    <br>tendo ganho alguma projecção nacional na quarta edição, em 1968, com o alargamento do âmbito à música erudita e ao fado.</p>
+            </section>
+            <section>
+                <h4>Localização</h4>
+                <p>O nosso festival localiza-se na freguesia de Vilar de Mouros no Concelho de Caminha.
+                </p>
+            </section>
+        </article>
+    </section>
+
     </main>
+
+    <nav class="menu">
+        <ul>
+            <li><a class="button" href="https://www.vodafoneparedesdecoura.com">Paredes de Coura</a></li>
+            <li><a class="button" href="https://nosalive.com">NOS Alive</a></li>
+            <li><a class="button" href="https://www.superbocksuperrock.pt">Super Bock Super Rock</a></li>
+        </ul>
+    </nav>
 
     <!-- Informacoes extras -->
     <footer>

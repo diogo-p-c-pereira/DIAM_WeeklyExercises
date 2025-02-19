@@ -6,7 +6,7 @@
     display: inline-block;
 }
 .button:hover, .button:active {
-    background-color: rgb(148, 64, 187);
+    background-color: rgb(18, 110, 101);
 }
 body {
     background-color: rgb(199, 199, 199);
@@ -16,6 +16,27 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Arial", serif;
+}
+
+.submitButton{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.submitButton:hover, .submitButton:active {
+    background-color: rgb(18, 110, 101);
+}
+
+header h1{
+    color: white;
 }
 
 .menu ul{
@@ -24,21 +45,46 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+
 }
 
 .menu li{
-    float: left;
+    float: none;
+}
+
+header{
+    text-align: center;
 }
 
 .menu a{
     padding: 10px;
-    display: block;
     text-align: center;
+    justify-content: center;
+    text-decoration: none;
 }
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 24%;
+}
+
+.column.middle {
+  width: 48%;
+}
+
+.row{
+  display: flex;
+}
+
 
 header{
     background-color: rgb(80, 69, 68);
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
