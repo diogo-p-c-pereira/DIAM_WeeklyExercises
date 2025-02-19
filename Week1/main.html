@@ -3,41 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Festival Vilar de Mouros</title>
-    <style>
-        body{
-            text-align: center;
-        }
-        table, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        footer{
-            background-color: black;
-        }
-        aside{
-            background-color: lightgrey;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
         <h1>Festival Vilar de Mouros</h1>
-        <figure><img src="images/l_cavilardemouros24.png" width="25%" alt="header image"></figure>
+        <figure><img src="images/l_cavilardemouros24.png" width="60%" alt="header image"></figure>
     </header>
 
-    <nav>
-        <article style="background-color: gainsboro">
-            <a style="font-size: x-large" href="Sheet.html">Candidatar para Voluntário</a>
-        </article>
-        <br>
-        <article style="background-color: lightgrey">
-            <h2>Outros Festivais</h2>
-            <a href="https://www.vodafoneparedesdecoura.com">Paredes de Coura</a>
-            <a href="https://nosalive.com">NOS Alive</a>
-            <a href="https://www.superbocksuperrock.pt">Super Bock Super Rock</a>
-        </article>
+    <nav class="menu">
+        <ul>
+            <li><a class="button" href="main.html">Home</a></li>
+            <li><a class="button" href="Sheet.html">Candidatura para Voluntários</a></li>
+            <li><a class="button" href="https://www.vodafoneparedesdecoura.com">Paredes de Coura</a></li>
+            <li><a class="button" href="https://nosalive.com">NOS Alive</a></li>
+            <li><a class="button" href="https://www.superbocksuperrock.pt">Super Bock Super Rock</a></li>
+        </ul>
     </nav>
 
     <!-- noticias / informacoes usando aside (para complementar) -->
@@ -53,7 +36,7 @@
 
     <main>
         <article>
-            <figure><a href="https://www.festivalvilardemouros.pt"><img src="images/vilar.png" width="25%" alt="Image not found: Cartaz" title="Cartaz"> </a>
+            <figure><a class="button" href="https://www.festivalvilardemouros.pt"><img src="images/vilar.png" width="25%" alt="Image not found: Cartaz" title="Cartaz"> </a>
                 <figcaption>Cartaz 2025</figcaption>
             </figure>
         </article>
@@ -76,7 +59,7 @@
 
         <article>
             <!-- tabela com os horários -->
-            <table align="center">
+            <table class="table">
                 <tr>
                     <th>Artista</th>
                     <th>Data</th>

@@ -1,0 +1,53 @@
+.button {
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+.button:hover, .button:active {
+    background-color: rgb(148, 64, 187);
+}
+body {
+    background-color: rgb(199, 199, 199);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu ul{
+    background-color: rgb(2, 169, 130);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu a{
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(80, 69, 68);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(80, 69, 68);
+    margin-top: auto;
+}
+
+.table {
+    margin:auto;
+}
