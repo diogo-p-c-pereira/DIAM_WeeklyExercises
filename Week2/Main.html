@@ -16,7 +16,7 @@
 
     <nav class="menu">
         <ul>
-            <li><a class="button" href="main.html">Home</a></li>
+            <li><a class="button" href="Main.html">Home</a></li>
             <li><a class="button" href="Sheet.html">Candidatura para Voluntários</a></li>
         </ul>
     </nav>
@@ -34,13 +34,24 @@
                 <p>Os passes gerais têm que ser obrigatoriamente trocados por uma pulseira na bilheteira do festival.</p>
             </aside>
         </article>
+
         <article class="column middle" style="background-color:#bbb;">
             <h2>Cartaz</h2>
             <figure><a href="https://www.festivalvilardemouros.pt"><img src="images/vilar.png" id="festivalHeader" width="40%" alt="Image not found: Cartaz" title="Cartaz"> </a>
                 <figcaption>Cartaz 2025</figcaption>
             </figure>
-            <br>
 
+            <br>
+            <article>
+                <figure>
+                    <button class="submitButton" onclick="previous()"> < </button>
+                    <img src="images/slideshow/delfins.jpg" id="slideshow" alt="Slideshow image not found!" width="70%">
+                    <button class="submitButton" onclick="next()"> > </button>
+                    <figcaption id="slideshow_caption">Delfins</figcaption>
+                </figure>
+            </article>
+
+            <br>
             <h2>Horário</h2>
             <article>
                 <!-- tabela com os horários -->
@@ -152,8 +163,9 @@
                 </tr>
             </table>
             </article>
-            <br> <br>
+            <br>
         </article>
+
         <article class="column side" style="background-color:#ccc;">
             <h2> O nosso Festival</h2>
             <section>

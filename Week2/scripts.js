@@ -13,3 +13,18 @@ function validate(){
     }
     alert("Text Valid");
 }
+
+const slideshow = ["Delfins.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
+let index = 0;
+function next(){
+    index += (index >= slideshow.length-1) ? 0 : 1;
+    changeSlideshow();
+}
+function previous() {
+    index -= (index <= 0) ? 0 : 1;
+    changeSlideshow();
+}
+function changeSlideshow(){
+    document.getElementById("slideshow").src="images/slideshow/"+slideshow[index];
+    document.getElementById("slideshow_caption").textContent = slideshow[index].replace(/\.[^/.]+$/, "");
+}
