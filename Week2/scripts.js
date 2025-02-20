@@ -14,17 +14,28 @@ function validate(){
     alert("Text Valid");
 }
 
-const slideshow = ["Delfins.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
+const slides = ["Delfins.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
+startSlideShow();
 function next(){
-    index += (index >= slideshow.length-1) ? 0 : 1;
-    changeSlideshow();
+    index = (index >= slides.length-1) ? 0 : index+1;
+    changeSlide();
 }
 function previous() {
-    index -= (index <= 0) ? 0 : 1;
-    changeSlideshow();
+    index = (index <= 0) ? slides.length-1 : index-1;
+    changeSlide();
 }
-function changeSlideshow(){
-    document.getElementById("slideshow").src="images/slideshow/"+slideshow[index];
-    document.getElementById("slideshow_caption").textContent = slideshow[index].replace(/\.[^/.]+$/, "");
+
+function changeSlide(){
+    document.getElementById("slideshow").src="images/slideshow/"+slides[index];
+    document.getElementById("slideshow_caption").textContent = slides[index].replace(/\.[^/.]+$/, "");
+}
+
+function startSlideShow(){
+    setTimeout(slideshow, 4000);
+}
+
+function slideshow(){
+    next();
+    setTimeout(slideshow, 4000);
 }
