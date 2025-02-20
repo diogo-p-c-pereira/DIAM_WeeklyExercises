@@ -16,7 +16,8 @@ function validate(){
 
 const slides = ["Delfins*GNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
-setTimeout(slideshow, 4000);
+let timeOut = 4500;
+setTimeout(slideshow, timeOut);
 function next(){
     index = (index >= slides.length-1) ? 0 : index+1;
     changeSlide();
@@ -33,5 +34,5 @@ function changeSlide(){
 
 function slideshow(){
     next();
-    setTimeout(slideshow, 4000);
+    setTimeout(slideshow, timeOut);
 }
