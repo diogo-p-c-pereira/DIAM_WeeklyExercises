@@ -16,8 +16,8 @@ function validate(){
 
 const slides = ["Delfins*GNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
-let timeOut = 4500;
-setTimeout(slideshow, timeOut);
+let timeOutId;
+startSlideShow();
 function next(){
     index = (index >= slides.length-1) ? 0 : index+1;
     changeSlide();
@@ -28,11 +28,17 @@ function previous() {
 }
 
 function changeSlide(){
+    clearTimeout(timeOutId)
     document.getElementById("slideshow").src="images/slideshow/"+slides[index];
     document.getElementById("slideshow_caption").textContent = slides[index].replace(/\.[^/.]+$/, "");
+    startSlideShow();
+}
+
+function startSlideShow(){
+    timeOutId = setTimeout(slideshow, 4500);
 }
 
 function slideshow(){
     next();
-    setTimeout(slideshow, timeOut);
+    timeOutId = setTimeout(slideshow, 4500);
 }
