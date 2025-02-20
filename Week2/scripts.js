@@ -14,7 +14,7 @@ function validate(){
     alert("Text Valid");
 }
 
-const slides = ["Delfins.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
+const slides = ["Delfins*GNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
 startSlideShow();
 function next(){
