@@ -97,3 +97,12 @@ footer{
 .table {
     margin:auto;
 }
+
+.slide{
+    border-radius: 15px;
+}
+
+.slideCaption{
+    background-color: lightgrey;
+    border-radius: 15px;
+}

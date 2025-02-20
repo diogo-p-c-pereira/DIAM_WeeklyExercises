@@ -16,7 +16,7 @@ function validate(){
 
 const slides = ["Delfins*GNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
-startSlideShow();
+setTimeout(slideshow, 4000);
 function next(){
     index = (index >= slides.length-1) ? 0 : index+1;
     changeSlide();
@@ -29,10 +29,6 @@ function previous() {
 function changeSlide(){
     document.getElementById("slideshow").src="images/slideshow/"+slides[index];
     document.getElementById("slideshow_caption").textContent = slides[index].replace(/\.[^/.]+$/, "");
-}
-
-function startSlideShow(){
-    setTimeout(slideshow, 4000);
 }
 
 function slideshow(){
