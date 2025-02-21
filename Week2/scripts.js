@@ -14,7 +14,19 @@ function validate(){
     alert("Text Valid");
 }
 
-const slides = ["Delfins*GNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
+document.addEventListener("DOMContentLoaded", function () {
+    let image = document.getElementById("festivalImage");
+
+    image.addEventListener("mouseover", function () {
+        image.style.opacity = "0";
+    });
+
+    image.addEventListener("mouseout", function () {
+        image.style.opacity = "1";
+    });
+});
+
+const slides = ["DelfinsGNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
 let timeOutId;
 slideShow();
