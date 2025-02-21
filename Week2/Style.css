@@ -98,12 +98,11 @@ footer{
     margin:auto;
 }
 
-.slide{
-    border-radius: 15px;
+.table th{
+    padding: 5px 15px;
 }
 
-.slideCaption{
-    background-color: lightgrey;
+.slide{
     border-radius: 15px;
 }
 

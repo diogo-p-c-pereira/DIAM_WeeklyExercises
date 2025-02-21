@@ -1,3 +1,4 @@
+// function to validate the text area
 function validate(){
     const badWords = ["Abécula", "Abentesma", "Achavascado", "Alimária", "Andrajoso", "Barregã", "Cacóstomo",
                         "Cuarra", "Estólido", "Estroso", "Estultilóquio", "Nefelibata", "Néscio", "Pechenga",
@@ -14,6 +15,7 @@ function validate(){
     alert("Text Valid");
 }
 
+// event listener for the image to disappear when the mouse is over it
 document.addEventListener("DOMContentLoaded", function () {
     let image = document.getElementById("festivalImage");
 
@@ -26,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// functions to change the image in the slideshow using buttons and automatic change
 const slides = ["DelfinsGNR.jpg" , "Vapors_of_Morphone.jpg", "Xutos&Pontapes.jpeg", "AmaliaHoje.webp"];
 let index = 0;
 let timeOutId;
@@ -42,7 +45,7 @@ function previous() {
 function changeSlide(){
     clearTimeout(timeOutId)
     document.getElementById("slideshow").src="images/slideshow/"+slides[index];
-    document.getElementById("slideshow_caption").textContent = slides[index].replace(/\.[^/.]+$/, "");
+    document.getElementById("slideshow_caption").textContent = slides[index].split(".")[0];
     slideShow();
 }
 
