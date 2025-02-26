@@ -8,6 +8,13 @@
 .button:hover, .button:active {
     background-color: rgb(18, 110, 101);
 }
+
+.commentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 body {
     background-color: rgb(199, 199, 199);
     margin: 0;
@@ -19,24 +26,105 @@ body {
     font-family: "Arial", serif;
 }
 
-.submitButton{
+.button{
     background-color: rgb(13, 82, 72);
     color: white;
     text-align: center;
     display: inline-block;
-    border-radius: 8px;
     border: none;
     font-size: medium;
     padding: 5px 15px;
     text-decoration: none;
 }
 
-.submitButton:hover, .submitButton:active {
+.submitButton_changed{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 60px;
+    width: 40% ;
+    align-self: center;
+}
+
+.validation_button{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 30% ;
+    align-self: center;
+}
+
+.form-article{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: inline;
+    text-align: left;
+    margin:2% 0 0 15%;
+    font-weight: bold;
+}
+
+.formBackGround{
+    background-color: rgb(171, 171, 171);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5% 30%;
+}
+
+input[type=text], input[type=tel] , textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    border-style: none;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 70%;
+    height: 100px;
+    resize: vertical;
+}
+
+.button:hover, .button:active , .submitButton_changed:hover, .submitButton_changed:active{
     background-color: rgb(18, 110, 101);
 }
 
 header h1{
     color: white;
+}
+
+h2{
+    background-color: rgb(136, 136, 136);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5% 15%;
+}
+
+.middle_h2{
+    background-color: rgb(136, 136, 136);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5% 40%;
 }
 
 .menu ul{
@@ -94,11 +182,14 @@ footer{
     margin-top: auto;
 }
 
-.table {
+.table  {
     margin:auto;
+    background-color: #aaaaaa;
+
+    border-radius: 10px;
 }
 
-.table th{
+.table th , td {
     padding: 5px 15px;
 }
 

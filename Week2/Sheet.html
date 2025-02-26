@@ -9,7 +9,9 @@
 <body>
     <header>
         <h1>Festival Vilar de Mouros</h1>
-        <figure><img src="images/l_cavilardemouros24.png" width="40%" alt="header image"></figure>
+        <figure>
+            <img src="images/l_cavilardemouros24.png" width="40%" alt="header image">
+        </figure>
     </header>
 
     <nav class="menu">
@@ -19,44 +21,48 @@
         </ul>
     </nav>
 
-    <h1>Candidatura para Voluntários</h1>
-    <form action="SheetAccepted.html" method="post">
+    <main>
+        <section class="formBackGround" >
+            <form action="SheetAccepted.html" method="post">
+            <h1>Candidatura para Voluntários</h1>
+            <label for="nome">Nome:</label>
+            <input required type="text" name="name" id="nome">
 
-        <label for="nome">Nome:</label>
-        <input required type="text" name="name" id="nome">
-        <br><br>
+            <label for="contacto">Contacto:</label>
+            <input required type="tel" name="contacto" id="contacto" >
 
-        <label for="contacto">Contacto:</label>
-        <input required type="tel" name="contacto" id="contacto" >
-        <br><br>
-
-        <label for="horario">Disponibilidade: </label>
-        <input required type="text" list="horarios" name="horario" id="horario">
-        <datalist id="horarios">
-            <option value="21 Agosto - 19:00 - 23:30">
-            <option value="22 Agosto - 19:00 - 23:30">
-            <option value="23 Agosto - 19:00 - 23:30">
+            <label for="horario">Disponibilidade: </label>
+            <input required type="text" list="horarios" name="horario" id="horario">
+            <datalist id="horarios">
+                <option value="21 Agosto - 19:00 - 23:30">
+                <option value="22 Agosto - 19:00 - 23:30">
+                <option value="23 Agosto - 19:00 - 23:30">
             <option value="24 Agosto - 19:00 - 23:30">
-        </datalist>
-        <br>
-        <br>
-        <label for="area">Comentário: </label>
-        <textarea type="textarea" name="area" id="area"> </textarea>
-        <input value="Validar Comentário" class="submitButton" type="button" name="comentario" id="comentario" onclick="validate()">
-        <br><br>
+            </datalist>
 
-        <input type="submit" class="submitButton" value="Enviar Candidatura">
-    </form>
-<br><br>
-<nav class="menu">
-    <ul>
-        <li><a class="button" href="https://www.vodafoneparedesdecoura.com">Paredes de Coura</a></li>
-        <li><a class="button" href="https://nosalive.com">NOS Alive</a></li>
-        <li><a class="button" href="https://www.superbocksuperrock.pt">Super Bock Super Rock</a></li>
-    </ul>
-</nav>
+            <label for="area">Comentário: </label>
+            <textarea type="textarea" name="area" id="area"> </textarea>
+            <input value="Validar Comentário" class="validation_button" type="button" name="comentario" id="comentario" onclick="validate()">
+
+            <input type="submit" class="submitButton_changed" value="Enviar Candidatura">
+
+            </form>
+        </section>
+    </main>
+
+
+
 
 <footer>
+    <aside>
+        <nav class="menu">
+            <ul>
+                <li><a class="button" href="https://www.vodafoneparedesdecoura.com">Paredes de Coura</a></li>
+                <li><a class="button" href="https://nosalive.com">NOS Alive</a></li>
+                <li><a class="button" href="https://www.superbocksuperrock.pt">Super Bock Super Rock</a></li>
+            </ul>
+        </nav>
+    </aside>
     <figure> <img src="images/logo.png" alt="logo vdm" width="10%"> </figure>
     <address style="color:white"> info@festivalvilardemouros.pt</address>
 </footer>
