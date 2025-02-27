@@ -1,4 +1,4 @@
-import "../../Assets/Style.css";
+import "../../../Assets/Style.css";
 function rightColumn() {
   return (
     <article className="column side" style={{backgroundColor: "#ccc"}}>

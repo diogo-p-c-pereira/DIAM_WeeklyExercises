@@ -1,4 +1,4 @@
-import "../../Assets/Style.css";
+import "../../../Assets/Style.css";
 function leftColumn() {
   return (
       <aside className="column side" style={{backgroundColor: "#aaa"}}>

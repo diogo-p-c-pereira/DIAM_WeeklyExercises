@@ -1,7 +1,7 @@
-import "../Assets/Style.css";
-import LeftColumn from "./main/LeftColumn";
-import MiddleColumn from "./main/MiddleColumn";
-import RightColumn from "./main/RightColumn";
+import "../../Assets/Style.css";
+import LeftColumn from "./Columns/LeftColumn";
+import MiddleColumn from "./Columns/MiddleColumn/MiddleColumn";
+import RightColumn from "./Columns/RightColumn";
 function Main() {
   return (
     <main>

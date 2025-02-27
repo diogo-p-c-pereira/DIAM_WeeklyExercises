@@ -1,4 +1,4 @@
-import "../../Assets/Style.css";
+import "../../../../Assets/Style.css";
 import Cartaz from "./MiddleContent/Cartaz";
 import SlideShow from "./MiddleContent/SlideShow";
 import Horario from "./MiddleContent/Horario";
