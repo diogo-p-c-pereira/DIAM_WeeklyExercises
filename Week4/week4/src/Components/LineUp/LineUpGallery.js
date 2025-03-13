@@ -5,7 +5,6 @@ import ArtistasInfo from '../../Assets/ArtistasInfo.json';
 function LineUpGallery() {
   return (
     <div>
-      <h1>Festival Vilar de Mouros</h1>
       <h2>Artistas Confirmados</h2>
       {ArtistasInfo.map((artista, index) => (
           <LineUpArtist
