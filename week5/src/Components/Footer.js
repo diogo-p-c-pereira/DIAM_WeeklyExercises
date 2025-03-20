@@ -14,10 +14,10 @@ function Footer() {
               </ul>
           </nav>
 
-          {!hasFooter?
+          {hasFooter?
               <div>
                 <figure><img src="images/logo.png" alt="logo vdm" width="10%"/></figure>
-                <address style={{color: "white"}}> info@festivalvilardemouros.pt</address>
+                <address style={{color: "white"}}> info@festivalvilardemouros.pt</address><br/>
               </div>
               :
               <div>

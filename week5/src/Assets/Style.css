@@ -5,7 +5,7 @@
     text-decoration: underline;
     display: inline-block;
 }
-.button:hover, .button:active {
+.button:hover, .button:active ,.validation_button:hover, .validation_button:active , .submitButton_changed:hover, .submitButton_changed:active{
     background-color: rgb(18, 110, 101);
 }
 
@@ -38,19 +38,23 @@ label{
     font-weight: bold;
 }
 
-.formBackGround{
-    background-color: rgb(171, 171, 171);
+form{
+    background-color: rgb(164, 156, 156);
     padding: 10px;
     border-radius: 15px;
-    margin: 5% 30%;
-}
-
-.button:hover, .button:active , .submitButton_changed:hover, .submitButton_changed:active{
-    background-color: rgb(18, 110, 101);
 }
 
 header h1{
     color: white;
+}
+
+form h2 {
+    background-color: rgb(197, 186, 186);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 5% 20%;
+    font-family: Bahnschrift, "Bold", serif ;
 }
 
 h2{
@@ -166,11 +170,72 @@ footer{
 }
 
 .form-container > div {
-  background-color: #f1f1f1;
-  width: 65%;
+    width: 50%;
     height: 50%;
   margin: 2%;
   text-align: center;
   font-size: 18px;
     border-radius: 15px;
+}
+
+.formBackGround{
+    background-color: rgb(171, 171, 171);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5% 20%;
+}
+
+input[type=text], input[type=tel] , textarea{
+    width: 65%;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #e8e2e2;
+}
+
+textarea{
+    width: 65%;
+    height: 100px;
+    resize: vertical;
+}
+
+.validation_button{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 24% ;
+    align-self: center;
+}
+
+.submitButton_changed{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 60px;
+    width: 30% ;
+    align-self: center;
+}
+
+.form-article{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
