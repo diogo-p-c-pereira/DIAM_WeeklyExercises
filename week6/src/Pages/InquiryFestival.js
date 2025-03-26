@@ -7,7 +7,9 @@ function InquiryFestival() {
   return (
       <div className={"Components"}>
           <Header/>
+          <br/>
           <Inquiry/>
+          <br/>
           <Footer/>
       </div>
   );
