@@ -275,6 +275,8 @@ form{
 .InquirySectionHorizontal{
   display: flex;
   align-items: center;
+    flex-direction: row;
+    justify-content: center;
   gap: 10px;
   margin: 4px 0;
 }

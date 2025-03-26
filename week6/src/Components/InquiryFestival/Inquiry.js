@@ -42,7 +42,7 @@ const handleChange = (e) => {
             <h2>Inquérito ao público do Festival de Vilar de Mouros</h2>
 
             <div className="InquirySection">
-                <label>Quais foram os artistas de que gostou no festival?</label>
+                <label>Quais foram os artistas de que gostou no festival?</label><br/>
                 {artistasData.map((artista, index) => (
                     <div key={index}>
                         <input
@@ -57,8 +57,9 @@ const handleChange = (e) => {
             </div>
             <br/>
 
+            <label>Qual o seu dia preferido para os concertos?</label>
             <div className="InquirySectionHorizontal">
-                <label>Qual o seu dia preferido para os concertos?</label>
+
                 {dias.map((dias) => (
                     <div key={dias}>
                         <input
@@ -72,8 +73,8 @@ const handleChange = (e) => {
                 ))}
             </div>
             <br/>
+            <label>Críticas (o que não correu bem no festival):</label>
             <div className="InquirySectionHorizontal">
-                <label>Críticas (o que não correu bem no festival):</label>
                 <textarea
                     name="criticas"
                     value={inquiryData.criticas}
@@ -84,7 +85,7 @@ const handleChange = (e) => {
             <input className="submitButton_changed" type="submit" value="Submeter inquérito"/>
         </form>
     </div>
-);
+  );
 }
 
 export default Inquiry;
