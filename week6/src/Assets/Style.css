@@ -1,0 +1,260 @@
+.button {
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+.button:hover, .button:active ,.validation_button:hover, .validation_button:active , .submitButton_changed:hover, .submitButton_changed:active{
+    background-color: rgb(18, 110, 101);
+}
+
+body {
+    background-color: rgb(199, 199, 199);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Arial", serif;
+}
+
+.button{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font-size: medium;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+label{
+    display: inline;
+    text-align: left;
+    margin:2% 0 0 15%;
+    font-weight: bold;
+}
+
+form{
+    background-color: rgb(164, 156, 156);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header h1{
+    color: white;
+}
+
+form h2 {
+    background-color: rgb(197, 186, 186);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 5% 20%;
+    font-family: Bahnschrift, "Bold", serif ;
+}
+
+h2{
+    background-color: rgb(136, 136, 136);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 5% 15%;
+}
+
+.middle_h2{
+    background-color: rgb(136, 136, 136);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5% 40%;
+}
+
+.menu ul{
+    background-color: rgb(2, 169, 130);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu li{
+    float: none;
+}
+
+header{
+    text-align: center;
+}
+
+.menu a{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 24%;
+}
+
+.column.middle {
+  width: 48%;
+}
+
+.row{
+  display: flex;
+}
+
+
+header{
+    background-color: rgb(80, 69, 68);
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(80, 69, 68);
+    margin-top: auto;
+    color: lightgrey;
+}
+
+.table  {
+    margin:auto;
+    background-color: #aaaaaa;
+
+    border-radius: 10px;
+}
+
+.table th , td {
+    padding: 5px 15px;
+}
+
+.slide{
+    border-radius: 15px;
+}
+
+#festivalImage{
+    transition: opacity 0.3s ease-in-out;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 25%;
+    height: 50%;
+  margin: 2%;
+  text-align: center;
+  font-size: 18px;
+    border-radius: 15px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-container > div {
+    width: 50%;
+    height: 50%;
+  margin: 2%;
+  text-align: center;
+  font-size: 18px;
+    border-radius: 15px;
+}
+
+.formBackGround{
+    background-color: rgb(171, 171, 171);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5% 20%;
+}
+
+input[type=text], input[type=tel] , textarea{
+    width: 65%;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #e8e2e2;
+}
+
+textarea{
+    width: 65%;
+    height: 100px;
+    resize: vertical;
+}
+
+.validation_button{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 24% ;
+    align-self: center;
+}
+
+.submitButton_changed{
+    background-color: rgb(13, 82, 72);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 60px;
+    width: 200px ;
+    align-self: center;
+}
+
+.form-article{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-result{
+    display: flex;
+    flex-direction: column;
+}
+
+.InquirySection{
+  display: contents;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0;
+}
+
+.InquirySectionHorizontal{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0;
+}
