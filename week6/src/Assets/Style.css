@@ -243,6 +243,26 @@ form{
 .inquiry-result{
     display: flex;
     flex-direction: column;
+    background-color: rgb(164, 156, 156);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.inquiry-result h2 {
+    background-color: rgb(197, 186, 186);
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 2% 20%;
+    font-family: Bahnschrift, "Bold", serif ;
+}
+
+.inquiry-result h4 {
+    background-color: rgb(197, 186, 186);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0% 20%;
+    font-family: Bahnschrift, serif ;
 }
 
 .InquirySection{
