@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Demo</title>
+</head>
+<body>
+    <h1>Lista de perguntas:</h1>
+    {%  for q in questions %}
+        <p>{{ q.questao_texto }}</p>
+    {% endfor %}
+</body>
+</html>
