@@ -1,5 +1,3 @@
-import datetime
-
 from dateutil.relativedelta import relativedelta
 
 from votacao.models import Questao, Opcao
