@@ -12,8 +12,7 @@ function CreateQuestion() {
     const submitHandler = (e) => {
         e.preventDefault();
         const pubDate = moment(Date.now()).format("YYYY-MM-DD HH:mm:ss.SSSSSS");
-        axios.post(ENDPOINT_URL, {"questao_texto" : text, "pub_data": pubDate}).then();
-        navigate("/");
+        axios.post(ENDPOINT_URL, {"questao_texto" : text, "pub_data": pubDate}).then( () => navigate("/") );
     }
 
     return(

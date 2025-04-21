@@ -12,8 +12,7 @@ function CreateOption() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.post(ENDPOINT_URL, {"opcao_texto" : text, "questao" : questionId, "votos": 0 }).then();
-        navigate("/detail/" + questionId);
+        axios.post(ENDPOINT_URL, {"opcao_texto" : text, "questao" : questionId, "votos": 0 }).then( () => navigate("/detail/" + questionId));
     }
 
     return(
